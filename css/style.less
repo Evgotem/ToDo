@@ -1,0 +1,77 @@
+// vars
+@primary: #AF7EEB;
+@secondary: #ffffff;
+@text-color: #4d67af;
+@body-bg: #E3E9FF;
+
+//styles
+body {
+   background: @body-bg;
+   font-family: 'Open Sans', sans-serif;
+}
+.container {
+   width: 600px;
+   margin: 0 auto;
+}
+.main-title{
+   text-align: center;
+   background: @primary;
+   color: @secondary;
+   padding: 15px;
+   border-radius: 10px;
+}
+.todo-wrapper {
+   background: @secondary;
+   color: @text-color;
+   border-radius: 10px;
+   
+}
+.todo__list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   
+}
+.todo__item {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid @body-bg;
+   padding: 0 15px;
+   user-select: none;
+   justify-content: space-between;
+   
+}
+.todo__text {
+   flex-grow: 1;
+   display: inline-block;
+   margin-left: 15px;
+   cursor: pointer;
+   font-size: 24px;
+   padding: 15px;
+   transition: 0.2s ease;
+   border: 1px solid transparent;
+   border-radius: 10px;
+   &:hover {
+      transition: 0.2s ease;
+      background: lighten(@body-bg, 0.1);
+      border: 1px solid @secondary;
+   }
+}
+.add-new-task {
+   display: block;
+   margin: 15px auto 0;
+   color: @secondary;
+   background: @primary;
+   outline: none;
+   padding: 15px 25px;
+   border: none;
+   border-radius: 10px;
+   font-size: 20px;
+   cursor: pointer;
+}
+.delete-task {
+   font-size: 25px;
+   padding: 0 10px;
+   cursor: pointer;
+   margin-left: 15px;
+}

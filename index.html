@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>ToDo List</title>
+</head>
+<body>
+   
+   <div class="container">
+      <h1 class="main-title">My Todo List</h1>
+      <div class="todo-wrapper">
+         <ul class="todo__list">
+            <li class="todo__item">
+               <input class="checkbox" type="checkbox" id="milk">
+               <label class="todo__text" for="milk">Milk</label>
+               <span class="delete-task">
+                  &times;
+               </span>
+            </li>
+            <li class="todo__item">
+               <input class="checkbox" type="checkbox" id="cola">
+               <label class="todo__text" for="cola">Cola</label>
+               <span class="delete-task">
+                  &times;
+               </span>
+            </li>
+            <li class="todo__item">
+               <input class="checkbox" type="checkbox" id="pizza">
+               <label class="todo__text" for="Pizza">Pizza</label>
+               <span class="delete-task">
+                  &times;
+               </span>
+            </li>
+         </ul>
+      </div>
+      <button class="add-new-task">
+         + New task
+      </button>
+   </div>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
