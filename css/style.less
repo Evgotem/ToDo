@@ -6,6 +6,7 @@
 
 //styles
 body {
+   padding-top: 30px;
    background: @body-bg;
    font-family: 'Open Sans', sans-serif;
 }
@@ -19,20 +20,21 @@ body {
    color: @secondary;
    padding: 15px;
    border-radius: 10px;
+   margin: 15px 0;
 }
-.todo-wrapper {
+.todos-wrapper {
    background: @secondary;
    color: @text-color;
    border-radius: 10px;
    
 }
-.todo__list {
+.todos__list {
    list-style: none;
    padding: 0;
    margin: 0;
    
 }
-.todo__item {
+.todos__item {
    display: flex;
    align-items: center;
    border-bottom: 1px solid @body-bg;
@@ -53,20 +55,20 @@ body {
    border-radius: 10px;
    &:hover {
       transition: 0.2s ease;
-      background: lighten(@body-bg, 0.1);
+      background-color: lighten(@body-bg, 3%);
       border: 1px solid @secondary;
    }
 }
-.add-new-task {
-   display: block;
-   margin: 15px auto 0;
+.add-task-btn {
+
    color: @secondary;
    background: @primary;
    outline: none;
-   padding: 15px 25px;
+   width: 65px;
+   height: 65px;
    border: none;
    border-radius: 10px;
-   font-size: 20px;
+   font-size: 25px;
    cursor: pointer;
 }
 .delete-task {
@@ -74,4 +76,22 @@ body {
    padding: 0 10px;
    cursor: pointer;
    margin-left: 15px;
+}
+
+form {
+   margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+}
+
+.description-task {
+   height: 61px;
+   border: 2px solid @text-color;
+   margin-right: 15px;
+   flex-grow: 1;
+   border-radius: 10px;
+   outline: none;
+   font-size: 25px;
+   color: @text-color;
+   padding: 0 15px;
 }

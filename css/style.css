@@ -1,4 +1,5 @@
 body {
+  padding-top: 30px;
   background: #E3E9FF;
   font-family: 'Open Sans', sans-serif;
 }
@@ -12,18 +13,19 @@ body {
   color: #ffffff;
   padding: 15px;
   border-radius: 10px;
+  margin: 15px 0;
 }
-.todo-wrapper {
+.todos-wrapper {
   background: #ffffff;
   color: #4d67af;
   border-radius: 10px;
 }
-.todo__list {
+.todos__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.todo__item {
+.todos__item {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #E3E9FF;
@@ -44,19 +46,18 @@ body {
 }
 .todo__text:hover {
   transition: 0.2s ease;
-  background: #e4e9ff;
+  background-color: #f2f5ff;
   border: 1px solid #ffffff;
 }
-.add-new-task {
-  display: block;
-  margin: 15px auto 0;
+.add-task-btn {
   color: #ffffff;
   background: #AF7EEB;
   outline: none;
-  padding: 15px 25px;
+  width: 65px;
+  height: 65px;
   border: none;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 .delete-task {
@@ -64,4 +65,20 @@ body {
   padding: 0 10px;
   cursor: pointer;
   margin-left: 15px;
+}
+form {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.description-task {
+  height: 61px;
+  border: 2px solid #4d67af;
+  margin-right: 15px;
+  flex-grow: 1;
+  border-radius: 10px;
+  outline: none;
+  font-size: 25px;
+  color: #4d67af;
+  padding: 0 15px;
 }

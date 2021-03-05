@@ -13,34 +13,24 @@
    
    <div class="container">
       <h1 class="main-title">My Todo List</h1>
-      <div class="todo-wrapper">
-         <ul class="todo__list">
-            <li class="todo__item">
-               <input class="checkbox" type="checkbox" id="milk">
-               <label class="todo__text" for="milk">Milk</label>
-               <span class="delete-task">
-                  &times;
-               </span>
-            </li>
-            <li class="todo__item">
-               <input class="checkbox" type="checkbox" id="cola">
-               <label class="todo__text" for="cola">Cola</label>
-               <span class="delete-task">
-                  &times;
-               </span>
-            </li>
-            <li class="todo__item">
-               <input class="checkbox" type="checkbox" id="pizza">
-               <label class="todo__text" for="Pizza">Pizza</label>
-               <span class="delete-task">
-                  &times;
-               </span>
-            </li>
-         </ul>
+      <form action="">
+         <input class="description-task" type="text">
+         <button class="add-task-btn" type="button">
+            + 
+         </button>
+      </form>
+      <div class="todos-wrapper">
+         <!-- <ul class="todos__list">
+               <li class="todos__item">
+                  <input class="checkbox" type="checkbox" id="milk">
+                  <label class="todo__text" for="milk">Milk</label>
+                  <span class="delete-task">
+                     &times;
+                  </span>
+               </li>
+         </ul> -->
       </div>
-      <button class="add-new-task">
-         + New task
-      </button>
+     
    </div>
 
    <script src="js/script.js"></script>
