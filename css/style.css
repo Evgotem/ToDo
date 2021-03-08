@@ -29,14 +29,14 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #E3E9FF;
-  padding: 0 15px;
+  padding: 0;
   user-select: none;
   justify-content: space-between;
+  position: relative;
 }
-.todo__text {
+.todos__text {
   flex-grow: 1;
   display: inline-block;
-  margin-left: 15px;
   cursor: pointer;
   font-size: 24px;
   padding: 15px;
@@ -44,9 +44,9 @@ body {
   border: 1px solid transparent;
   border-radius: 10px;
 }
-.todo__text:hover {
+.todos__text:hover {
   transition: 0.2s ease;
-  background-color: #f2f5ff;
+  background-color: rgba(169, 169, 169, 0.2);
   border: 1px solid #ffffff;
 }
 .add-task-btn {
@@ -62,9 +62,12 @@ body {
 }
 .delete-task {
   font-size: 25px;
-  padding: 0 10px;
+  padding: 0 20px;
   cursor: pointer;
-  margin-left: 15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 form {
   margin-bottom: 15px;
@@ -81,4 +84,20 @@ form {
   font-size: 25px;
   color: #4d67af;
   padding: 0 15px;
+}
+.checked {
+  opacity: 0.2;
+  border-radius: 10px;
+  text-decoration: line-through;
+}
+.todos__item.delition {
+  animation: opacity 0.6s ease-in-out;
+}
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
